@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>日考</title>
+    <style>
+        .box{
+            border:1px solid #ccc;
+        }
+        .box1{
+            border:1px solid green;
+        }
+        .box2{
+            border:1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!--<div ng-app="" ng-init="firstName='yafei';last='shi'">
+        <input type="text" ng-model="text"/>
+        &lt;!&ndash;第一种方法&ndash;&gt;
+        &lt;!&ndash;<p ng-bind="text"></p>&ndash;&gt;
+        <div>
+            {{text}}
+        </div>
+        <br/>
+        <div ng-bind="firstName">
+
+        </div>
+        <div>
+            名：{{firstName}}
+            姓：{{last}}
+        </div>
+        <br/>
+        <div ng-class="'box'">box</div>
+        <br/>
+        <div ng-class="'box1'">box1</div>
+        <br/>
+        <div ng-class="'box2'">box2</div>
+        <br/>
+        <div ng-class="['box','box1','box2'][0]">box</div>
+        <br/>
+        <div ng-class="['box','box1','box2'][1]">box1</div>
+        <br/>
+        <div ng-class="['box','box1','box2'][2]">box2</div>
+        <br/>
+        <div ng-class="{box:true}">box</div>
+        <br/>
+        <div ng-class="{box1:true}">box1</div>
+        <br/>
+        <div ng-class="{box2:true}">box2</div>
+        <br/>
+
+    </div>-->
+    <div ng-app="" ng-init="quantity=1;price=5">
+
+        <h2>价格计算器</h2>
+
+        数量： <input type="number"    ng-model="quantity">
+        价格： <input type="number" ng-model="price">
+
+        <p><b>总价：</b> {{ quantity * price }}</p>
+
+    </div>
+    <script src="js/angular.js"></script>
+
+</body>
+</html>
